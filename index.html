@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<title>Meghna ❤️ ABSOLUTE FINAL FORM</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@media (max-width: 768px) {
+
+h1 {
+    font-size: 2em !important;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4em !important;
+    text-align: center;
+}
+
+.hero {
+    height: 90vh;
+    padding: 20px;
+}
+
+.section {
+    padding: 25px 10px !important;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery img {
+    height: 180px !important;
+    border-radius: 15px;
+    scroll-snap-align: center;
+}
+
+button {
+    width: 85%;
+    font-size: 16px;
+}
+
+.timer {
+    font-size: 1.4em !important;
+}
+
+.section div {
+    margin-bottom: 10px;
+}
+
+.text-box, #text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+}
+</style>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<style>
+body{
+margin:0;
+font-family:Segoe UI;
+background:black;
+color:white;
+overflow-x:hidden;
+}
+
+/* LOCK SCREEN */
+#lock{
+position:fixed;
+width:100%;height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:9999;
+}
+
+input{
+padding:10px;
+border:none;
+border-radius:10px;
+margin:10px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:10px;
+background:#ff4d6d;
+color:white;
+cursor:pointer;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+background:radial-gradient(circle,#ff4d6d,#000);
+}
+
+h1{
+font-size:4em;
+text-shadow:0 0 25px pink;
+}
+
+/* SECTION */
+.section{
+min-height:100vh;
+padding:60px 20px;
+opacity:0;
+transform:translateY(40px);
+transition:1.2s;
+background:linear-gradient(180deg,#1a001a,#000);
+}
+
+.section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* GALLERY */
+.gallery{
+display:flex;
+overflow-x:auto;
+gap:15px;
+padding:20px;
+scroll-snap-type:x mandatory;
+}
+
+.gallery img{
+height:300px;
+border-radius:20px;
+scroll-snap-align:center;
+transition:0.5s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+/* TYPEWRITER */
+#text{
+white-space:pre-line;
+font-size:18px;
+line-height:1.6;
+}
+
+/* TIMER */
+.timer{
+font-size:2em;
+text-align:center;
+}
+
+/* FINAL SCENE */
+.final{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+background:radial-gradient(circle,#ff4d6d,#1a001a);
+}
+
+.big{
+font-size:3em;
+text-shadow:0 0 30px white;
+}
+
+/* HEARTS */
+.heart{
+position:fixed;
+top:-10px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{transform:translateY(100vh);}
+}
+
+/* FADE */
+.fade{
+opacity:0;
+transform:translateY(30px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOCK -->
+<div id="lock">
+<h2>🔐 Skriv navnet hennes</h2>
+<input id="pass">
+<button onclick="unlock()">Åpne</button>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+<h1>HAPPY BIRTHDAY ❤️ MEGHNA</h1>
+
+<p>Dette er vår historie i én opplevelse</p>
+<button onclick="music()">🎵 Start musikk</button>
+
+<audio id="music" loop>
+<source src="Remo Love Bgm.m4r" type="audio/mpeg">
+</audio>
+</div>
+
+<!-- TIMER -->
+<div class="section fade">
+<h2>⏳ Vår reise</h2>
+<div class="section fade">
+    <h2>💖 Vår kjærlighet i tall</h2>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;text-align:center;margin-top:20px;">
+
+        <div style="background:rgba(255,255,255,0.1);padding:20px;border-radius:15px;">
+            <h1>792</h1>
+            <p>Dager med kjærlighet ❤️</p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.1);padding:20px;border-radius:15px;">
+            <h1>2 år</h1>
+            <p>Sammen siden starten 💍</p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.1);padding:20px;border-radius:15px;">
+            <h1>39.7 km</h1>
+            <p>Avstand når vi savner hverandre 🌍</p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.1);padding:20px;border-radius:15px;">
+            <h1>1 år</h1>
+            <p>Forskjell mellom oss ❤️</p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.1);padding:20px;border-radius:15px;">
+            <h1>✨</h1>
+            <p>Kjærlighet laget av Gud 🙏</p>
+        </div>
+
+    </div>
+</div>
+<div class="timer" id="days"></div>
+</div>
+
+<!-- GALLERY -->
+<div class="section fade">
+<h2>💖 Minner</h2>
+<div class="gallery">
+<img src="BILDE_71.jpg">
+<img src="BILDE_23.jpg">
+<img src="BILDE_45.jpg">
+<img src="BILDE_56.jpg">
+<img src="BILDE_33.jpg">
+<img src="BILDE_53.jpg">
+<img src="BILDE_63.jpg">
+<img src="BILDE_65.jpg">
+<img src="BILDE_42.jpg">
+<img src="BILDE_10.jpg">
+<img src="BILDE_22.jpg">
+<img src="BILDE_66.jpg">
+<img src="BILDE_69.jpg">
+<img src="BILDE_26.jpg">
+<img src="BILDE_21.jpg">
+<img src="BILDE_9.jpg">
+<img src="BILDE_6.jpg">
+</div>
+</div>
+
+<!-- LETTER -->
+<div class="section fade">
+<h2>💌 Til deg</h2>
+<p id="text"></p>
+</div>
+
+<!-- FINAL -->
+<div class="final">
+<h1 class="big">💍 Will You Stay Forever?</h1>
+<button onclick="final()">JA ❤️</button>
+</div>
+
+<script>
+
+/* UNLOCK */
+function unlock(){
+let v=document.getElementById("pass").value.toLowerCase();
+if(v==="meghna"){
+document.getElementById("lock").style.display="none";
+start();
+}
+}
+
+/* MUSIC */
+function music(){
+document.getElementById("music").play();
+}
+
+/* TIMER */
+let startDate=new Date("2024-04-10");
+setInterval(()=>{
+let now=new Date();
+let diff=Math.floor((now-startDate)/1000/60/60/24);
+document.getElementById("days").innerText=
+diff+" dager med kjærlighet ❤️";
+},1000);
+
+/* TYPEWRITER */
+const msg=`HAPPY BIRTHDAY MEGHNA ❤️
+
+Gratulerer så mye med dagen min søte lille babykuttyyyyy❤️❤️, jeg elsker deg så masse og kan ikke tro at den lille 14 åringen jeg møtte på aanduvizha endelig blir 17år🥹🥹🥹 .Jeg vil bare at du skal vite søtnosen min at du er det beste som noen gang har skjedd i livet mitt🥹🥹❤️❤️. Du har fått meg til å bli en bedre person❤️, en bedre sønn❤️, venn❤️ onkel❤️, fetter❤️ og absolutt alt❤️❤️. Ingen har bydd seg så mye om meg før og jeg vil bare si at jeg virkelig ser på deg som moren min amma👩🏽‍🍼❤️.  Jeg har vært sammen med deg i 2 år nå ma, jeg har sett deg vokse og forandre deg daglig og jeg vil bare at du skal vite at uansett hvor gammel du blir så er du og du skal alltid være min baby💍👨🏽‍🍼. Jeg elsker deg så mye ma og jeg skal alltid være med deg søtnosen min, da vi har det godt og ikke❤️❤️. Jeg virkelig ikke hva jeg skal si kuttyma, kanskje fordi du driver og synger foran meg «hey macha inka vaada»😅😅 du er så søt søtnosen min omggg jeg har bare så lyst til å klemme deg og aldri gi slipp på deg ma🤗❤️❤️. jeg er her kanskje ikke for å feire bursdagen din med fammen din osv, men bare se søtnosen min i framtiden så skal jeg være der hver dag og vekke deg opp med så mange suprises og ha den beste dagen noensinne meghna ma😘😘😘😘🥰❤️❤️. 
+
+det er så vanskelig gå tro at det er 2 år siden ma jeg møtte deg og så rart å tenke på at du er 17 år gammel i dag… jeg vet ikke hva jeg skal si men jeg er kjempe stolt av deg babymaa for absolutt alt, tusen takk babiya for alt du har gjort for meg🥹🥹. Jeg håper virkelig at du har den best mulige bursdagen noensinne, og at alt går din vei ma❤️❤️. jeg vil se deg så glad at du kommer gråtende til meg og sier du hadde den perfekte dagen, jeg håper virkelig at alt går perfekt for deg i dag amma og at du får ha det kjempegøyuvte, med fammen din også vennene dine på lørdag og ofcc my family på søndag🫣❤️❤️. Nest år så kommer amma og appa og moren din og faren din. Sarju og lelli også ofcc, jeg bare gleder meg så mye kuttyma til neste år, da du er 18 og jeg har fått lappen.😝🤭❤️❤️❤️
+
+ Unnskyld chellam for alt jeg har gjort mot deg jeg prøver å være en bedre kar for deg ma og jeg hater å gjøre ting som gjør deg såra, men noen ganger kan jeg ikke kontrollere det ma, men jeg skal bli bedre ma. i promise.😞❤️❤️ Jeg elsker deg så mye ma og det ikke en ting jeg ikke hadde gjort for deg ma🥹🥹, jeg elsker deg så mye søtnosen min, og jeg vet jeg ikke snakker om bursdagen din så mye ma, men det er fordi dette føles ikke ekte ut og jeg vet ikke hva jeg skal si chellam😅🤭❤️❤️ … jeg bare håper at dette blir den beste bursdagen noensinne og alt du får alle dine ønsker oppfylt ma og alt går din vei🙏🏽❤️❤️. Chellam jeg skal aldri glemme deg uansett hva og jeg skal aldri miste deg, dette er et forhold holdt sammen av kadavul selv ma, det siste vi to skal sammen er å slå opp.🥹🥹🤭❤️❤️ Jeg skal aldri være her for deg babyma ma, i promise chellam du er det beste som har skjedd med meg du er absolutt hele verden for meg jeg vet ikke hva et liv uten deg ser ut som chellamma du har vært her hver dag for meg i 2 hele år og det har ikke gått 1 uke hvor jeg ikke snakker med deg ma og jeg er så stolt av oss to. 😘😘😘🥹🥹🤭🤭❤️❤️
+
+du er min lille babbyyy❤️ ❤️  jeg elsker deg så mye, jeg vet ikke hva jeg gjorde for å fortjene deg amma du har vært den største engelen og den søteste lillebabyen for meg, og jeg kan ikke tro at jeg fikk en person som deg ma 🥹🥹… selv i dag tenkte jeg ma, hvordan hadde et liv uten deg sett ut ma. det er noe jeg virkelig ikke kan forestille meg thangam, du er bare så perfekt. Du har alt og jeg mener ALT øye, lepper, øyne utseende generelt og deg søteste og morsomste personligheten noensinne..🤭❤️❤️
+ jeg er så glad jeg kom til aanduvizha❤️ ❤️  og så glad jeg kom i kontakt med deg ma. jeg elsker deg så mye meghna mathan kanish, og som du vet så har familien min fått 5 små lille babyer og jeg kan virkelig ikke vente mer på at det er du som er gravid chellam, det skal være den beste dagen min noensinne å se deg sammen med barna våre, Aariyan, Aarathiya, priya og de andre 7 ungene våre.🤭🥹❤️❤️
+ Du er så kjempesøt og jeg vil virkelig ha et liv bare med deg ma, jeg kan allerede se det for meg i drømmene mine, og motivasjonen min sammen med deg er at jeg vet at en dag så kommer de drømmene til å bli sanne🥹🥹 … for et år siden så spurte jeg deg et spørsmål ma, og dette skal jeg spørre deg hver dag ma helt til du sier ja.😘😘 Meghna Mathan Kanish min søte lille engel vil du gjøre meg til lykkeligste karen og gifte deg med meg da tiden er klar🥹🥹❤️❤️ jeg er helt seriøs ma🥹🥹 
+Chellam jeg vet virkelig ikke hva jeg gjorde for å fortjene deg ma🥹🥹, du har vært den søteste og fineste jenta jeg noensinne har møtt ma, jeg skal gjøre alt i min makt fo rå få deg til å føle deg som en prinsesse🤭❤️❤️, og jeg skal aldri la deg være alene min thangam fordi du er min thangam🪙❤️❤️…. Du er verdt mer en alt for meg og jeg skal aldri la deg gå❤️❤️. Du er bare min meghna, og jeg er bare din🥹🥹. Vi er sammen til kadavul separer oss, men bare så du vet det chellam det er ingen jeg vil katta thaalien på bortsett fra deg ma.🫱🏼‍🫲🏽😘😘 bare se ma SATHIYAM innen 9 år chellam så skal du ha en thaali på halsen din som jeg fester🤭❤️❤️🥹🥹. Jeg gjør alt for deg ma, jeg risikerer alt for deg. Jeg ser på deg som livet mitt og jeg vet du gjør det samme. 🥹🥹
+
+Du får aldri lov til å gå vekk fra meg ma😡❤️❤️, og jeg går aldri vekk fra deg ma🤭❤️❤️. bare se ma, en dag du skal få thaalien på deg, og jeg skal elske å gi deg den, og du skal se hele familen vår rundt oss glade med store smiler.🥹🥹🤭❤️❤️ Vi to er sammen ma, men ikke familien vår enda ma. på 1 år har så mye skjedd❤️❤️, maami og maama sa ja og amma forteller alle om deg, bare tenk på neste år ma🤭❤️❤️, da vi to er sammen ma og leser alle disse meldingene sammen og koser oss sammen med familine vår og feirer sammen alle🥹🥹, og alle familiene…jeg elsker deg så mye babyma og jeg skal aldri gi slipp på deg min søte lille pondati💍❤️❤️.. du er så søt og jeg elsker deg så mye thangam, jeg håper du koser deg kjempemasse thangam🤭❤️❤️, denne dagen her betyr så mye for meg å thangam og dette har vært en dag jeg har feiret i 15 år nå ma😅😅, og jeg visste ikke at den samme dagen skulle være den viktigste dagen i mitt liv🤭❤️❤️..
+
+Gratulerer så mye med dagen ammu🥹🥹 jeg elsker deg så mye chellam❤️❤️ og jeg vet ikke hva jeg skal gjøre ma, men jeg håper at du koser deg kjempe mye chellam du skal enjoyee dagen her ma og ingenting skal gå dårlig ma jeg lover🙏🏽❤️❤️, i dag skal være perfekt og du skal som vanlig også se perfekt ut❤️❤️ og kose deg ute ma❤️❤️, kos deg masse i dag min chellakutty❤️❤️, ammukutty❤️❤️, thangakutty❤️❤️, my mental baby❤️❤️, my baby sinnaagen❤️❤️,  du er så søt my ONE AND ONLY PONDATI😍😍😍😍😍😘😘😘😘🥹🥹🥹🤭❤️❤️ and my beautifull wifeeee❤️❤️, pappuu, my pappukuttyy❤️❤️, amma❤️❤️, mamma chachuuu❤️❤️, the love of my life, and my WHOLEEEE WORLD❤️❤️, my life my cutie little pookie bear❤️, my vairam ,thangam❤️❤️, my meghkutty❤️❤️, my mampazham kutty, mangoo babyyyyy❤️❤️.. jeg håper virkelig at du koser deg i dag my everything, i love you ma❤️❤️, my meghkutty pondatii..🥹🥹🤭❤️❤️
+
+`;
+
+let i=0;
+function type(){
+if(i<msg.length){
+document.getElementById("text").innerHTML+=msg[i];
+i++;
+setTimeout(type,20);
+}
+}
+
+/* SCROLL ANIMATION */
+function start(){
+type();
+window.addEventListener("scroll",()=>{
+document.querySelectorAll(".fade").forEach(el=>{
+if(el.getBoundingClientRect().top<window.innerHeight-100){
+el.classList.add("show");
+}
+});
+});
+}
+
+/* HEARTS */
+setInterval(()=>{
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"vw";
+h.style.fontSize=Math.random()*20+10+"px";
+h.style.animationDuration=Math.random()*3+3+"s";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),6000);
+},200);
+
+/* FINAL CONFETTI */
+function final(){
+confetti({
+particleCount:400,
+spread:180,
+origin:{y:0.6}
+});
+alert("💍 Dette er kjærlighet. Gratulerer ❤️");
+}
+
+</script>
+
+</body>
+</html>
